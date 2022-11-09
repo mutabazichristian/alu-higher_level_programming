@@ -7,5 +7,3 @@ def safe_print_integer(value):
         return(True)
     except:
         return(False)
-
-safe_print_integer(value=1.11)
