@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-#function that prints x elements
+# A function that prints x elements of a list
 
 
 def safe_print_list(my_list=[], x=0):
-    for i in my_list:
+    willy = 0
+    for i in range(x):
         try:
-            print (i)
+            print("{}".format(my_list[i]), end="")
+            willy += 1
         except IndexError:
             break
-        if i == my_list[x] :
-            break
-        return (x)
+    print("")
+    return (willy)
