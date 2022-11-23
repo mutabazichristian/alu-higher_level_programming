@@ -2,7 +2,7 @@
 '''documentation and stuff'''
 
 import urllib.request
-with urllib.request.urlopen('https://alu-intranet.hbtn.io/status') as response:
+with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
     html = response.read()
     print('Body response:')
     print('\t- type: {}'.format(type(html)))
