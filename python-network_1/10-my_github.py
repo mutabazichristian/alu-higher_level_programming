@@ -5,7 +5,6 @@
 import sys
 import requests
 
-
 url = 'https://api.github.com/user'
 
 if __name__ == "__main__":
