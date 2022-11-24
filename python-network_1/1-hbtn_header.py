@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import urllib
+import sys
 
-import urllib, sys
 UrlID = urllib.request.urlopen
