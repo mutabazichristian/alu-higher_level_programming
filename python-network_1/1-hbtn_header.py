@@ -3,4 +3,10 @@
 
 import urllib
 import sys
-with 
+
+'''too many documentations'''
+if __name__ == "__main__":
+    '''sending the request'''
+    req = sys.argv[1]
+    with urllib.request.urlopen(req) as response:
+        print(response.headers.get('X-Request-Id'))
