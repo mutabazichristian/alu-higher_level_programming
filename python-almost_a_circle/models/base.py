@@ -10,7 +10,6 @@ class Base:
     """A base class"""
     __nb_objects = 0
 
-
     def __init__(self, id=None):
         """Initialize a new id"""
         if id is not None:
@@ -36,8 +35,8 @@ class Base:
         file_name = cls.__name__ + ".json"
         new_list = []
         if list_objs:
- 
-            for i in list_objs:
+
+             for i in list_objs:
                 new_list.append(cls.to_dictionary(i))
 
         with open(file_name, mode="w") as myFile:
@@ -137,8 +136,7 @@ class Base:
             pen.forward(shape.height)
             pen.right(90)
     @classmethod
-    def to_dictionary(a):
+     def to_dictionary(a):
         it = iter(a)
         res_dct = dict(zip(it, it))
         return res_dct
- 
