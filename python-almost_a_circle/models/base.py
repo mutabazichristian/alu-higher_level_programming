@@ -135,6 +135,7 @@ class Base:
             pen.right(90)
             pen.forward(shape.height)
             pen.right(90)
+
     @classmethod
     def to_dictionary(a):
         it = iter(a)
