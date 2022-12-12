@@ -36,7 +36,7 @@ class Base:
         new_list = []
         if list_objs:
 
-             for i in list_objs:
+            for i in list_objs:
                 new_list.append(cls.to_dictionary(i))
 
         with open(file_name, mode="w") as myFile:
@@ -137,6 +137,6 @@ class Base:
             pen.right(90)
     @classmethod
     def to_dictionary(a):
-         it = iter(a)
-         res_dct = dict(zip(it, it))
-         return res_dct
+        it = iter(a)
+        res_dct = dict(zip(it, it))
+        return res_dct
