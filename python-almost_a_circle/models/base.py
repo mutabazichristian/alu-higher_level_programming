@@ -137,6 +137,6 @@ class Base:
             pen.right(90)
     @classmethod
     def to_dictionary(a):
-        it = iter(a)
-        res_dct = dict(zip(it, it))
-        return res_dct
+         it = iter(a)
+         res_dct = dict(zip(it, it))
+         return res_dct
