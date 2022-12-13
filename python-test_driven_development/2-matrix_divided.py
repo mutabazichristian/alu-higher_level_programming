@@ -1,19 +1,32 @@
 #!/usr/bin/python3
-"""A function that prints the name of a user"""
+'''A function that divs a martix with a number'''
 
 
-def say_my_name(first_name, last_name=""):
-    '''Function to take in names and prints all name
-    Args:
-        first_name : this is the first arg in a string format
-        last_name : must be a string too
+def matrix_divided(matrix, div):
+    """"A function that divs a martix with a number"""
+    if not isinstance(matrix, (list,)):
+        raise TypeError("matrix must be a matrix "
+                        "(list of lists) of integers/floats")
+    for row in matrix:
+        if type(row) != list:
+            raise TypeError("matrix must be a matrix "
+                            "(list of lists) of integers/floats")
+        for item in row:
+            if not isinstance(item, (int, float)):
+                raise TypeError("matrix must be a matrix"
+                                " (list of lists) of integers/floats")
+    row_size = len(matrix[0])
+    for row in matrix:
+        if len(row) != row_size:
+            raise TypeError("Each row of the matrix must have the same size")
+    if not isinstance(div, (int, float)):
+        raise TypeError("div must be a number")
+    if div == 0:
+        raise ZeroDivisionError("division by zero")
 
-    Returns:
-        My name is <first name> <last name>
-    '''
-    if type(first_name) != str:
-        raise TypeError("first_name must be a string")
-    if type(last_name) != str:
-        raise TypeError("last_name must be a string")
-
-    print("My name is {} {}".format(first_name, last_name))
+    mat_new = []
+    for i in range(len(matrix)):
+        mat_new.append(list())
+        for j in range(len(matrix[i])):
+            mat_new[i].append(round(matrix[i][j] / div, 2))
+    return mat_new
