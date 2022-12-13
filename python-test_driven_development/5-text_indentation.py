@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-add_integer = __import__('0-add_integer').add_integer
+"""A function to sperate words in python"""
 
-print(add_integer(1, 2))
-print(add_integer(100, -2))
-print(add_integer(2))
-print(add_integer(100.3, -2))
-try:
-    print(add_integer(4, "School"))
-except Exception as e:
-    print(e)
-try:
-    print(add_integer(None))
-except Exception as e:
-    print(e)
+
+def text_indentation(text):
+    '''Fucntion to bring the texts'''
+    if type(text) != str:
+        raise TypeError("text must be a string")
+
+    for delim in ".:?":
+        text = (delim + "\n\n").join(
+            [line.strip(" ") for line in text.split(delim)]
+        )
+
+    print("{}".format(text), end="")

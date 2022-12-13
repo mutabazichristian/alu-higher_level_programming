@@ -1,15 +1,23 @@
 #!/usr/bin/python3
-"""A function to sperate words in python"""
+"""A function that prints the sqaures"""
 
 
-def text_indentation(text):
-    '''Fucntion to bring the texts'''
-    if type(text) != str:
-        raise TypeError("text must be a string")
+def print_square(size):
+    '''FUnction to print the squares
+    Args:
+        size : must be an integer
+    Returns:
+        prints the square
+    '''
+    square_char = "#"
+    if type(size) != int:
+        raise TypeError("size must be an integer")
+    if size < 0:
+        raise ValueError("size must be >= 0")
+    if type(size) == float and size < 0:
+        raise TypeError("size must be an integer")
 
-    for delim in ".:?":
-        text = (delim + "\n\n").join(
-            [line.strip(" ") for line in text.split(delim)]
-        )
-
-    print("{}".format(text), end="")
+    for i in range(size):
+        for j in range(size):
+            print(square_char, end="")
+        print()

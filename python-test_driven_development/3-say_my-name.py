@@ -1,23 +1,19 @@
 #!/usr/bin/python3
-"""A function that prints the sqaures"""
+"""A function that prints the name of a user"""
 
 
-def print_square(size):
-    '''FUnction to print the squares
+def say_my_name(first_name, last_name=""):
+    '''Function to take in names and prints all name
     Args:
-        size : must be an integer
-    Returns:
-        prints the square
-    '''
-    square_char = "#"
-    if type(size) != int:
-        raise TypeError("size must be an integer")
-    if size < 0:
-        raise ValueError("size must be >= 0")
-    if type(size) == float and size < 0:
-        raise TypeError("size must be an integer")
+        first_name : this is the first arg in a string format
+        last_name : must be a string too
 
-    for i in range(size):
-        for j in range(size):
-            print(square_char, end="")
-        print()
+    Returns:
+        My name is <first name> <last name>
+    '''
+    if type(first_name) != str:
+        raise TypeError("first_name must be a string")
+    if type(last_name) != str:
+        raise TypeError("last_name must be a string")
+
+    print("My name is {} {}".format(first_name, last_name))
