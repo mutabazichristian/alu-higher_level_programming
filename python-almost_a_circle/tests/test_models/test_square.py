@@ -54,7 +54,7 @@ class TestSquare(unittest.TestCase):
 
     def test__str__(self):
         """Test the functions in square"""
-        Base._Base__nb_objects = 0
+        Base.__nb_objects = 0
         s1 = Square(2)
         with patch("sys.stdout", new=StringIO()) as fake_out:
             print(s1)

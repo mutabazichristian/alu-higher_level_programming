@@ -36,6 +36,7 @@ class Base:
         file_name = cls.__name__ + ".json"
         new_list = []
         if list_objs:
+ 
             for i in list_objs:
                 new_list.append(cls.to_dictionary(i))
 
@@ -135,3 +136,9 @@ class Base:
             pen.right(90)
             pen.forward(shape.height)
             pen.right(90)
+    @classmethod
+    def to_dictionary(a):
+        it = iter(a)
+        res_dct = dict(zip(it, it))
+        return res_dct
+ 
