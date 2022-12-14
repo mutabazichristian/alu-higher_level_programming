@@ -30,7 +30,7 @@ class TestBase(TestCase):
 
     def test_save_to_file(self):
         """Test that the file saves list objects to  file"""
-        Base._Base__nb_objects = 0
+        Base.__nb_objects = 0
         Square.save_to_file(None)
 
         self.assertTrue(os.path.isfile("Square.json"))
@@ -46,7 +46,7 @@ class TestBase(TestCase):
         with open("Square.json") as file:
             self.assertEqual(file.read(),
                              '[{"id": 1, "size": 1, "x": 0, "y": 0}]')
-        Base._Base__nb_objects = 0
+        Base.__nb_objects = 0
 
         Rectangle.save_to_file(None)
         self.assertTrue(os.path.isfile("Rectangle.json"))

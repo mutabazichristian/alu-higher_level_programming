@@ -76,14 +76,14 @@ class TestSquare(unittest.TestCase):
 
     def test_to_dictionary(self):
         """Test the functions in square"""
-        Base._Base__nb_objects = 0
+        Base.__nb_objects = 0
         s1 = Square(4)
         self.assertEqual(s1.to_dictionary(),
                          {'id': 1, 'size': 4, 'x': 0, 'y': 0})
 
     def test_update(self):
         """Test the functions in square"""
-        Base._Base__nb_objects = 0
+        Base.__nb_objects = 0
         s1 = Square(2)
         s1.update()
         self.assertEqual(s1.id, 1)
@@ -155,7 +155,7 @@ class TestSquare(unittest.TestCase):
 
     def test_save_to_file(self):
         """Test the functions in square"""
-        Base._Base__nb_objects = 0
+        Base.__nb_objects = 0
 
         Square.save_to_file(None)
         self.assertTrue(os.path.isfile("Square.json"))
