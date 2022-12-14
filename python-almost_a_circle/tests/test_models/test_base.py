@@ -12,7 +12,7 @@ from models.square import Square
 class TestBase(TestCase):
     """The Test class for the Base class in models"""
 
-    def test_ba(self):
+    def test_base(self):
         """Test the starting point of creation of Base"""
         base = Base()
         base_1 = Base()
