@@ -1,10 +1,11 @@
+#!/usr/bin/node
 const arg = ARGV[0];
 
 if (arg == 0){
-    console.log("No")
+    console.log('No')
 }
 else if (arg == 1){
-    console.log("Argument found");
+    console.log('Argument found');
 } else {
-    console.log("Arguments found")
+    console.log('Arguments found')
 }
