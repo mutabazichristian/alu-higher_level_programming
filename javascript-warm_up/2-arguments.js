@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const arg = process.argv.slice ;
+const arg = process.argv.slice.lenght();
 
 if (arg == 0){
     console.log('No')
