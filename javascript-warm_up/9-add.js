@@ -1,12 +1,11 @@
 #!/usr/bin/node
 const argv = process.argv.slice();
-const first_integer = +argv[2];
-const second_integer = +argv[3];
+const firstInteger = +argv[2];
+const secondInteger = +argv[3];
 
-
-function add(a, b) {
+function add (a, b) {
   return a + b;
 }
 
-const sum = add(first_integer, second_integer);
+const sum = add(firstInteger, secondInteger);
 console.log(sum);
