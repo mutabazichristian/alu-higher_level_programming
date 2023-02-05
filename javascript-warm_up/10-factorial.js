@@ -7,6 +7,7 @@ function factorial (num) {
   for(let i = 1; i >= num; i++){
     fac = fac * i;
   }
+  return fac
 }
 
 console.log(factorial(firstInteger));
