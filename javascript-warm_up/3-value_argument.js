@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const argv = process.argv.slice(0);
+const argv = process.argv.slice(1);
 
 if (argv) {
   console.log(argv);
