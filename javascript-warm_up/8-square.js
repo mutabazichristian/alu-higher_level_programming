@@ -5,6 +5,9 @@ const x = argv[2];
 if (isNaN(x)) {
   console.log('Missing size');
 } else {
-  const X = x * x;
-  console.log(X);
+  for(let i = 0; i < x; i++){
+    for(let j = 0; j < x; j++){
+      console.log('x');
+    }
+  }
 }
