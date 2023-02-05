@@ -3,7 +3,7 @@ const argv = process.argv.slice();
 const firstInteger = +argv[2];
 
 function factorial (num) {
-  let fac = 1
+  let fac
   for(let i = 1; i >= num; i++){
     fac = fac * i;
   }
