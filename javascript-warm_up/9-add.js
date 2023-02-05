@@ -5,7 +5,7 @@ const second_integer = argv[3];
 
 
 function add(a, b) {
-  return sum = a + b;
+  return a + b;
 }
 
 const sum = add(first_integer, second_integer);
