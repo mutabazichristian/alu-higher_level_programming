@@ -1,11 +1,11 @@
 #!/usr/bin/node
 const argv = process.argv.slice();
 const firstInteger = +argv[2];
-factorial = 1
 
 function factorial (num) {
+  let fac = 1
   for(let i = 1; i >= num; i++){
-    factorial = factorial * i;
+    fac = fac * i;
   }
 }
 
