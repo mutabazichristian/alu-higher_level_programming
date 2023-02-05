@@ -2,4 +2,8 @@
 const argv = process.argv.slice();
 const number = argv [2];
 
-console.log('My number: ' +number);
+if( isNaN(+number)){
+  console.log('Not a number');
+} else{
+  console.log('My number: ' +number);
+}
