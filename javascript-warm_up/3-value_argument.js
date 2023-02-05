@@ -2,7 +2,7 @@
 const argv = process.argv.slice(0);
 
 if (argv) {
-  console.log(argv(1));
+  console.log(argv[1]);
 } else {
   console.log("No argument");
 }
