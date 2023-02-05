@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const argv = process.argv.slice();
-const first_integer = argv[2];
-const second_integer = argv[3];
+const first_integer = +argv[2];
+const second_integer = +argv[3];
 
 
 function add(a, b) {
