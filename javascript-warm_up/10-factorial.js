@@ -9,4 +9,4 @@ function factorial (num) {
   }
 }
 
-console.log(factorial(argv(firstInteger)));
+console.log(factorial(firstInteger));
