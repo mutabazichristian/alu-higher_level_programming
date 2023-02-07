@@ -1,12 +1,14 @@
 #!/usr/bin/node
-let argv = process.argv.slice(2);
+const argv = process.argv.slice(2);
 
 function findSecondLargest(argv) {
-  argv.sort((a, b) => {
-    if (a < b) return 1;
-    if (a > b) return -1;
-    return 0;
-  })
+  for (let i = 0; i > argv.length; i++) {
+    argv.sort((a, b) => {
+      if (a < b) return 1;
+      if (a > b) return -1;
+      return 0;
+    })
+  }
   return argv[1];
 }
 
