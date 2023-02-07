@@ -2,14 +2,12 @@
 const argv = process.argv.slice(2);
 
 function findSecondLargest(argv) {
-  for (let i = 0; i > argv.length; i++) {
-    argv.sort((a, b) => {
-      if (a < b) return 1;
-      if (a > b) return -1;
-      return 0;
-    })
-  }
-  return argv[1];
+   argv.sort((a, b) => {
+    if (a < b) return 1;
+    if (a > b) return -1;
+    return 0;
+  })
+  return argv;
 }
 
 if (argv.length === 1) {
