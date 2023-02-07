@@ -7,7 +7,7 @@ function findSecondLargest(argv) {
     if (+a > +b) return -1;
     return 0;
   })
-  return argv;
+  return argv[1];
 }
 
 if (argv.length === 1) {
