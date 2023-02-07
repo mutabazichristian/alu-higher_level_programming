@@ -1,5 +1,5 @@
 #!/usr/bin/node
-let argv = +process.argv.slice(2);
+let argv = process.argv.slice(2);
 
 function findSecondLargest(argv) {
   argv.sort((a, b) => {
