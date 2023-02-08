@@ -1,6 +1,7 @@
 #!/usr/bin/node
 function addMeMaybe(nb, fun) {
   fun();
-  nb++;
+  +nb++;
+  return nb;
 }
 exports.addMeMaybe = addMeMaybe;
