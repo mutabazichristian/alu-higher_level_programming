@@ -1,6 +1,8 @@
 #!/usr/bin/node
-function runner(x, callMeMoby) {
+function callMeMoby(x, fun) {
   for (let i = 0; i < x; i++) {
-    callMeMoby();
+    fun();
   }
 }
+
+exports.callMeMoby = callMeMoby;
