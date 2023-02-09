@@ -29,14 +29,7 @@ class Rectangle {
 
 class Square extends Rectangle {
   constructor (size) {
-    +size;
     super(size, size);
-  }
-}
-
-class Square extends Square {
-  constructor () {
-
   }
   charPrint (c) {
     if (c == undefined){
