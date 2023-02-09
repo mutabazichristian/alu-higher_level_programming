@@ -14,14 +14,14 @@ class Rectangle {
   }
 
   rotate () {
-    //exchanging height and width values without a third variable
+    // exchanging height and width values without a third variable
     this.height = this.height + this.width;
     this.width = this.height - this.width;
     this.height = this.height - this.width;
   }
 
   double () {
-    //doubling the value of height and width
+    // doubling the value of height and width
     this.height = this.height * 2;
     this.width = this.width * 2;
   }
