@@ -9,9 +9,7 @@ ask.get(url, (err, res) => {
   if (err) console.log(err);
   else {
     const content = JSON.parse(res.body).results;
-    content.forEach(objects => {
-      console.log(objects)
-    });
+    console.log(content);
   }
   console.log(localCount);
 });
