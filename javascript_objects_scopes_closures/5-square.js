@@ -29,7 +29,7 @@ class Rectangle {
 
 class Square extends Rectangle {
   constructor (size) {
-    this.super(size,size);
+    super(size,size);
   }
 }
 
