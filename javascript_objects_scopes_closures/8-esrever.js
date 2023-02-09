@@ -6,4 +6,5 @@ module.exports.esrever = function (list) {
     reverseList[count] = list[i];
     count++;
   }
+  return reverseList;
 };
