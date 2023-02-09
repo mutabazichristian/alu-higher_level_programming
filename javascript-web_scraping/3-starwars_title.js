@@ -7,6 +7,6 @@ ask.get(urlFilms, (err, res) => {
   if (err) console.log(err);
   else {
     content = JSON.parse(res.body);
-    console.log(content)
+    console.log(content);
   }
 });
