@@ -1,6 +1,6 @@
 #!/usr/bin/node
+let Array = [];
 module.exports.logMe = function (item) {
-  let Array = [];
   console.log(Array.length + ': ' + item);
   Array.push(item);
 };
