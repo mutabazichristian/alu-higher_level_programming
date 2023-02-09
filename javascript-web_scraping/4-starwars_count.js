@@ -7,12 +7,10 @@ let localCount = 0;
 
 ask.get(url, (err, res) => {
   if (err) console.log(err);
-  else{
+  else {
     const content = JSON.parse(res.body).results;
     content.forEach(objects => {
-      objects.forEach( char=>{
-        if (char.includes('/18/')) localCount++;
-      })
+      console.log(objects)
     });
   }
   console.log(localCount);
