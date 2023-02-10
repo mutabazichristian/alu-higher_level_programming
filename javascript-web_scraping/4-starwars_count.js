@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//program prints number of movies in which a certain character is present
+// program prints number of movies in which a certain character is present
 const ask = require('request');
 const url = process.argv[2];
 const characterId = 18;
@@ -10,9 +10,9 @@ ask.get(url, (err, res) => {
   else {
     const content = JSON.parse(res.body).results;
     content.forEach(obj => {
-      obj.characters.forEach(characters=>{
+      obj.characters.forEach(characters => {
         if (characters.includes(characterId)) localCount++;
-      })
+      });
     });
   }
   console.log(localCount);
