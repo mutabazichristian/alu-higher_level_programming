@@ -10,6 +10,11 @@ ask.get(url, (err, res) => {
   else {
     const content = JSON.parse(res.body).results;
     console.log(content);
+    content.forEach(obj => {
+      obj.characters.forEach(()=>{
+        
+      })
+    });
   }
   console.log(localCount);
 });
