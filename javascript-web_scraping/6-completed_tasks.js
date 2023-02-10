@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//script that gets content of a webpage and stores it in a file
+//script that computes the numer of tasks completed by user id
 const fs = require('fs');
 const ask = require('request');
 const url = process.argv[2];

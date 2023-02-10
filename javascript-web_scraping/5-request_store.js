@@ -9,5 +9,7 @@ const filePath = process.argv[3];
 ask.get(url, (err, res) => {
   if (err) console.log(err);
   const data = res.body;
-  fs.writeFile(filePath, data, (err) => { });
+  fs.writeFile(filePath, data, (err) => {
+    if (err) console.log(err);
+  });
 });
