@@ -8,7 +8,7 @@ const filePath = process.argv[3];
 
 ask.get(url, (err, res) => {
   if (err) console.log(err);
-  const data = JSON.parse(res.body);
+  const data = res.body;
   fs.writeFile(filePath, data, (err) => {
     console.log(err);
   });
