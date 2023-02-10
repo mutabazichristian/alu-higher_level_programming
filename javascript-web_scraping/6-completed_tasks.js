@@ -9,7 +9,11 @@ ask.get(url, (err, res) => {
   if (err) console.log(err);
   const data = JSON.parse(res.body);
   data.forEach(obj => {
-    console.log(obj);
+    obj.forEach( element => {
+      if(element.completed.includes(true)) {
+        element.id.push(completedArray);
+      }
+    })
   });
-  console.log(completedArray.length);
+  console.log(completedArray);
 });
