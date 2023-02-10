@@ -11,7 +11,7 @@ ask.get(url, (err, res) => {
     const content = JSON.parse(res.body).results;
     content.forEach(obj => {
       obj.characters.forEach(characters=>{
-        if (characters.include(characterId)) localCount++;
+        if (characters.includes(characterId)) localCount++;
       })
     });
   }
