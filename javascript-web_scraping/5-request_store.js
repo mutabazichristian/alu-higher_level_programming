@@ -6,7 +6,7 @@ const ask = require('request');
 const url = process.argv[2];
 const filePath = process.argv[3];
 
-ask.request(url, (err, res) => {
+ask.get(url, (err, res) => {
   if (err) console.log(err);
   const data = JSON.parse(res.body);
   fs.writeFile(filePath, data, (err) => {
