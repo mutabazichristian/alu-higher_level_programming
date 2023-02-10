@@ -12,7 +12,7 @@ ask.get(url, (err, res) => {
     console.log(content);
     content.forEach(obj => {
       obj.characters.forEach(()=>{
-        
+        localCount++;
       })
     });
   }
