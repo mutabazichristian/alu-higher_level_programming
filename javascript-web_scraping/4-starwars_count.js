@@ -10,7 +10,7 @@ ask.get(url, (err, res) => {
   else {
     const content = JSON.parse(res.body).results;
     content.forEach(obj => {
-      obj.characters.forEach(()=>{
+      obj.characters.forEach(characters=>{
         if (characters.include(characterId)) localCount++;
       })
     });
