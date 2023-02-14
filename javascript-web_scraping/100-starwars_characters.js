@@ -6,7 +6,8 @@ const movieId = process.argv[2];
 const url = `https://swapi-api.alx-tools.com/api/films${movieId}`;
 
 ask.get(url, (err, res) => {
-  if (err) console.log(err);
-  const data = JSON.parse(res.body).character;
-  console.log(data);
+  console.log(movieId);
+  // if (err) console.log(err);
+  // const data = JSON.parse(res.body).character;
+  // console.log(data);
 })
